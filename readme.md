@@ -47,6 +47,17 @@ SELECT campo1, campo2 FROM tabla;
 ### INSERT
 
 Esta consulta nos permite agregar fila(s) a una tabla.
+Para insertar datos, dependemos del tipo de columna.
+
+* **TEXT, VARCHAR** = 'texto'
+* **INT, BIGINT** = 1
+* **DATE** = '2019-12-20' FORMATO (AAAA-MM-DD)
+* **DATETIME** = '2019-12-20 20:19:40' FORMATO (AAAA-MM-DD HH:mm:ss)
+* **TIME** = '20:19:40' FORMATO (HH:mm:ss)
+* **DOUBLE O FLOAT** = -40323.40
+* **DECIMAL** = 2.20
+* **TINYINT** (*BOOLEAN*) = 0 ó 1
+
 Ejemplo:
 
 **AGREGAR UNA FILA**
