@@ -56,5 +56,42 @@ INSERT INTO tabla (campo1, campo2, campo3, campo4) VALUES ('valor1', 'valor2', '
 
 **AGREGAR VARIOS ELEMENTOS**
 ```sql
-INSERT INTO tabla (campo1, campo2, campo3, campo4) VALUES ({'valor1', 'valor2', 'valor3', 'valor4'});
+INSERT INTO tabla (campo1, campo2, campo3, campo4) VALUES ({'valor1', 'valor2', 'valor3', 'valor4'}, {'valor1', 'valor2', 'valor3', 'valor4'});
+```
+
+**AGREGAR ELEMENTOS A CIERTOS CAMPOS EN ESPECIFICO**
+```sql
+INSERT INTO tabla (campo1, campo2) VALUES ('valor1', 'valor2');
+```
+
+### UPDATE
+
+Esta consulta nos permite editar una o ciertas filas de una tabla
+Ejemplo:
+
+**EDITAR TODAS LAS FILAS CON TODOS SU CAMPOS**
+```sql
+UPDATE tabla SET campo1 = 'valor1', campo2 = 'valor2', campor3 = 'valor3', campo4 = 'valor4';
+```
+
+**EDITAR UNA FILA CON TODOS SU CAMPOS**
+```sql
+UPDATE tabla SET campo1 = 'valor1', campo2 = 'valor2', campor3 = 'valor3', campo4 = 'valor4' WHERE id = 1;
+```
+*En este ejemplo conocimos **WHERE** que sirve para filtrar las filas de una tabla*
+
+### DELETE
+
+Esta consulta nos permite eliminar una o ciertas filas de una tabla.
+**Tener precaución.**
+Ejemplo:
+
+**ELIMINAR TODAS LAS FILAS DE UNA TABLA**
+```sql
+DELETE FROM tabla;
+```
+
+**ELIMINAR UNA FILA DE UNA TABLA**
+```sql
+DELETE FROM TABLA WHERE id = 1;
 ```
